@@ -5,7 +5,9 @@ describe("getGreeting", () => {
     expect(getGreeting()).toBe("Hello world!");
   });
 
-  it("returns the hello world message with name", () => {
-    expect(getGreeting("John")).toBe("Hello world! From John");
+  describe("with name parameter", () => {
+    it("returns the hello world message with name", () => {
+      expect(getGreeting("John")).toBe("Hello world! From John");
+    });
   });
 });
